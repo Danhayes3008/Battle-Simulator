@@ -1,3 +1,5 @@
+
+
 //player boosts
 var playerRank = 0.1;
 
@@ -13,9 +15,14 @@ var ion = 3;
 var plasma = 2;
 
 //This section is used to calculate the current hp of the ship
-var addHealth = (baseHealth * armourBonus) / 100;
-var currentHealth = baseHealth + addHealth;
+// var addHealth = (baseHealth * armourBonus) / 100;
+// var currentHealth = baseHealth + addHealth;
 
+function boostArmour() {
+    var armourLevel = 6;
+    var armourBonus = armour * armourLevel;
+    var currentArmour = document.getElementById('message');
+    currentArmour.textContent = armourBonus;
+}
+boostArmour();
 
-document.write('<h2>' + 'Armour: ' + armour + '<h2>');
-console.log("Armour: " + armour);
