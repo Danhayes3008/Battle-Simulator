@@ -12,5 +12,10 @@ var laser = 2;
 var ion = 3;
 var plasma = 2;
 
+//This section is used to calculate the current hp of the ship
+var addHealth = (baseHealth * armourBonus) / 100;
+var currentHealth = baseHealth + addHealth;
+
+
 document.write('<h2>' + 'Armour: ' + armour + '<h2>');
 console.log("Armour: " + armour);
