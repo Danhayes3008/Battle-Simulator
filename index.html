@@ -6,129 +6,133 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h1>X-craft Battle Simulator</h1>
-        <h3>Human</h3>
-        <h1 id="message"></h1>
-        <hr>
-        <h3>Civilian</h3>
-        <table>
-            <tr>
-                <th>Ship</th>
-                <th>Attacker</th> 
-                <th>Defender</th>
-            </tr>
-            <tr>
-                <td>Espionage Probe</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Solar Satelite</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Small Cargo</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Large Cargo</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Recycler</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Colony ship</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Science Ship</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Metal Harvester</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Mineral Harvester</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Gas Harvester</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-        </table>
-        <h3>Military</h3>
-        <table>
-            <tr>
-                <th>Ship</th>
-                <th>Attacker</th> 
-                <th>Defender</th>
-            </tr>
-            <tr>
-                <td>Viking</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Fighter</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Stealth Fighter</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Cruiser</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Battleship</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Bomber</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Battlecruiser</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Destroyer</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Deathstar</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-            <tr>
-                <td>Supernova Star</td>
-                <td><input></input></td>
-                <td><input></input></td> 
-            </tr>
-        </table>
-        <a href="results.html" class="btn btn-default btn-success">Battle</a>
+        <div class="container">
+            <h1>X-craft Battle Simulator</h1>
+            <h3>Human</h3>
+            <h1 id="message"></h1>
+            <h1 id="attacker"></h1>
+            <hr>
+            <form>
+                <h3>Civilian</h3>
+                <table>
+                    <tr>
+                        <th>Ship</th>
+                        <th>Attacker</th> 
+                        <th>Defender</th>
+                    </tr>
+                    <tr>
+                        <td>armour</td>
+                        <td><input id="attackersArmourLevel"></input></td>
+                        <td><input id="defendersArmourLevel"></input></td> 
+                    </tr>
+                    <tr>
+                        <td>weapons</td>
+                        <td><input id="attackersWeaponLevel"></input></td>
+                        <td><input id="defendersWeaponLevel"></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Small Cargo</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Large Cargo</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Recycler</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Colony ship</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Science Ship</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Metal Harvester</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Mineral Harvester</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Gas Harvester</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                </table>
+                <h3>Military</h3>
+                <table>
+                    <tr>
+                        <th>Ship</th>
+                        <th>Attacker</th> 
+                        <th>Defender</th>
+                    </tr>
+                    <tr>
+                        <td>Viking</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Fighter</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Stealth Fighter</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Cruiser</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Battleship</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Bomber</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Battlecruiser</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Destroyer</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Deathstar</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                    <tr>
+                        <td>Supernova Star</td>
+                        <td><input></input></td>
+                        <td><input></input></td> 
+                    </tr>
+                </table>
+                <input type="submit" onClick="battle()" value="submit"></input>
+            </form>
 
-        <script src="js/boosts.js"></script>
-        <script src="js/ships.js"></script>
+            <script src="js/simulator.js"></script>
+        </div>
     </body>
 </html>
